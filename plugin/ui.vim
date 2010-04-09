@@ -14,4 +14,4 @@ set synmaxcol=256              " don't syntax highlight very long lines
 set lazyredraw                 " skip rendering during macro execution
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P " standard with ruler
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V,%o%)\ %P " plus byte offset
-set scrolloff=2                " lines visible at top/bottom of window
+set scrolloff=0                " lines visible at top/bottom of window

@@ -9,6 +9,7 @@ set smartcase  " ... unless the query has capital letters
 " https://github.com/tpope/vim-sensible
 nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
 
-" auto-center each search result we jump to
-nnoremap n nzz
-nnoremap N Nzz
+" consistent direction of search repetition: n down, N up
+" https://www.reddit.com/r/vim/comments/7l5pei/_/drkjo5h/
+nnoremap <expr> n 'Nn'[v:searchforward] . 'zvzz'
+nnoremap <expr> N 'nN'[v:searchforward] . 'zvzz'

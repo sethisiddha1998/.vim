@@ -1,0 +1,4 @@
+# https://www.mitchellhanberg.com/post/2018/10/18/how-to-use-elixir-ls-with-vim/
+mix deps.get
+mix compile
+mix elixir_ls.release
